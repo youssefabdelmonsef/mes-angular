@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand mx-md-5">
+    <!-- <img class="main-logo" src="{{IMAGES.MES_LOGO}}"> -->
+    <img class="logo" *ngIf="!getActiveLink(MES_ROUTES.SYSTEMS) && !getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE)" src="{{IMAGES.HEADER.LOGO_NUETRAL}}">
+    <img class="logo" *ngIf="getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE)" src="{{IMAGES.HEADER.LOGO_ADV_GREEN}}">
+    <img class="logo" *ngIf="getActiveLink(MES_ROUTES.SYSTEMS)" src="{{IMAGES.HEADER.LOGO_SYS_YELLOW}}">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse row" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-3 ml-md-5">
+      <li class="nav-item mx-md-4 dropdown">
+        <a [ngClass]="{'activeLink': getActiveLink(MES_ROUTES.ABOUT_US)}" class="nav-link dropdown-toggle" href="#"
+          id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="link mr-1">About Us</span> <img class="arrow" src="{{IMAGES.HEADER.ARROW_DOWN}}">
+          <div class="dropdown-menu mt-md-3" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{{MES_ROUTES.ABOUT_US_BORAD_MEMBERS}}">Who we are</a>
+            <a class="dropdown-item" href="{{MES_ROUTES.ABOUT_US_WHO_WE_ARE}}">Board Members</a>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item mx-md-4">
+        <a class="nav-link" [ngClass]="{'activeLink': getActiveLink(MES_ROUTES.NEWS)}" href="{{MES_ROUTES.NEWS}}">
+          <span class="link">News</span>
+        </a>
+      </li>
+      <li class="nav-item mx-md-4">
+        <a class="nav-link" [ngClass]="{'activeLinkOrange': getActiveLink(MES_ROUTES.SYSTEMS)}"
+          href="{{MES_ROUTES.SYSTEMS}}">
+          <span class="link">Systems</span>
+        </a>
+      </li>
+      <li class="nav-item mx-md-4">
+        <a class="nav-link" [ngClass]="{'activeLink': getActiveLink(MES_ROUTES.SERVICES)}"
+          href="{{MES_ROUTES.SERVICES}}">
+          <span class="link">Services</span>
+        </a>
+      </li>
+      <li class="nav-item mx-md-4">
+        <a class="nav-link" [ngClass]="{'activeLink': getActiveLink(MES_ROUTES.CLIENTS)}" href="{{MES_ROUTES.CLIENTS}}">
+          <span class="link">Clients</span>
+        </a>
+      </li>
+      <li class="nav-item mx-md-4">
+        <a class="nav-link" [ngClass]="{'activeLink': getActiveLink(MES_ROUTES.CONTACT_US)}"
+          href="{{MES_ROUTES.CONTACT_US}}">
+          <span class="link">Contact Us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

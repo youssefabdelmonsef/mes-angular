@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+/** fonts */
+@import 'app/constants/styles.constant.scss';
+@font-face {
+  font-family: 'ResamitzRegular';
+  src: url('assets/fonts/ResamitzRegular/ResamitzRegular.otf');
+  src: url('assets/fonts/ResamitzRegular/ResamitzRegular.ttf');
+  
+}
+@font-face {
+  font-family: 'ResamitzBold';
+  src: url('assets/fonts/ResamitzBold/ResamitzBold.otf');
+  src: url('assets/fonts/ResamitzBold/ResamitzBold.ttf');
+}
+@font-face {
+  font-family: 'PlateiaBold';
+  src: url('assets/fonts/PlateiaBold/PlateiaBold.ttf');
+}
+@font-face {
+  font-family: 'AdobeArabicRegular';
+  src: url('assets/fonts/AdobeArabicRegular/AdobeArabicRegular.otf');
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('assets/fonts/MyriadProRegular/MyriadProRegular.otf');
+}
+
+html {
+    // position: relative;
+    // min-height: 100%;
+    font-family: PlateiaBold;
+  }
+  
+  body {
+    
+    main {
+      /* Margin bottom by header height */
+      // margin-top: 102px;
+      /* Margin bottom by footer height */
+      // margin-bottom: 80px;
+      /** default font-family */
+      /** default font-size */
+      font-size: 14px;
+    }
+  }

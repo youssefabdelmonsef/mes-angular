@@ -1,0 +1,38 @@
+@import '../constants/styles.constant.scss';
+
+::ng-deep {
+    nav {
+        font-family: ResamitzBold;
+        font-size: 16px;
+        max-height: 110px;
+        background-color: white !important;
+        .logo {
+            max-width: 225px;
+        }
+        .navbar-nav {
+            .activeLink {
+                border-bottom: 10px solid $mes-cyan-color;
+                .link {
+                    color: $mes-cyan-color;
+                }
+            }
+            .activeLinkOrange {
+                border-bottom: 10px solid $mes-orange-color;
+                .link {
+                    color: $mes-orange-color;
+                }      
+            }
+            a {
+                .arrow {
+                    height: 10px;
+                }
+            }
+                a::after{
+                    display: none;
+                } 
+        }
+        #navbarNavDropdown {
+            background-color: white !important;
+        }
+    }
+}
