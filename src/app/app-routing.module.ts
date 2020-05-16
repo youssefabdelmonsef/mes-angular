@@ -1,34 +1,40 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SystemsModule } from './systems/systems.module';
+import { NewsModule } from './news/news.module';
+import { AboutUsModule } from './about-us/about-us.module';
+import { ServicesModule } from './services/services.module';
+import { ClientsModule } from './clients/clients.module';
+import { ContactUsModule } from './contact-us/contact-us.module';
 
 
 const routes: Routes = [
-  { 
-    path: '', redirectTo: '/about-us', pathMatch: 'full' 
+  {
+    path: '', redirectTo: '/about-us', pathMatch: 'full'
   },
   {
-    path:'about-us',
-    loadChildren: () => import('./about-us/about-us.module').then(targetModule => targetModule.AboutUsModule)
+    path: 'about-us',
+    loadChildren: () => AboutUsModule
   },
   {
-    path:'news',
-    loadChildren: () => import('./news/news.module').then(targetModule => targetModule.NewsModule)
+    path: 'news',
+    loadChildren: () => NewsModule
   },
   {
-    path:'systems',
-    loadChildren: () => import('./systems/systems.module').then(targetModule => targetModule.SystemsModule)
+    path: 'systems',
+    loadChildren: () => SystemsModule
   },
   {
-    path:'services',
-    loadChildren: () => import('./services/services.module').then(targetModule => targetModule.ServicesModule)
+    path: 'services',
+    loadChildren: () => ServicesModule
   },
   {
-    path:'clients',
-    loadChildren: () => import('./clients/clients.module').then(targetModule => targetModule.ClientsModule)
+    path: 'clients',
+    loadChildren: () => ClientsModule
   },
   {
-    path:'contact-us',
-    loadChildren: () => import('./clients/clients.module').then(targetModule => targetModule.ClientsModule)
+    path: 'contact-us',
+    loadChildren: () => ContactUsModule
   },
 ];
 

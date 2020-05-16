@@ -10,29 +10,76 @@
             max-width: 225px;
         }
         .navbar-nav {
-            .activeLink {
-                border-bottom: 10px solid $mes-cyan-color;
-                .link {
-                    color: $mes-cyan-color;
+            .nav-item {
+                .nav-link {
+                    .link {
+                        cursor: pointer;
+                    }
+                    &.activeLinkLine {
+                        border-bottom: 10px solid $mes-cyan-color;
+                        .link, .sublink {
+                            color: $mes-cyan-color;
+                        }
+                    }
+                    &.activeLinkOrange {
+                        border-bottom: 10px solid $mes-orange-color;
+                        .link {
+                            color: $mes-orange-color;
+                        }      
+                    }
+                    .arrow {
+                        height: 10px;
+                    }
+                    .dropdown-menu {
+                        border: none;
+                        border-radius: 0px;
+                        background-color: $mes-grey-color;
+                        font-size: 12px;
+                        color: white;
+                        padding: 0px;
+
+                        .dropdown-item {
+                            cursor: pointer;
+                            border-bottom: 1px solid white;
+                            padding: 12px;
+                        }
+                        .dropdown-item:hover {
+                            background-color: $mes-grey-color;
+                        }
+                        .dropdown-item:active {
+                            background-color: $mes-grey-color;
+                        }
+                        .dropdown-item:last-child {
+                            border: none;
+                        }
+                    }
                 }
-            }
-            .activeLinkOrange {
-                border-bottom: 10px solid $mes-orange-color;
-                .link {
-                    color: $mes-orange-color;
-                }      
-            }
-            a {
-                .arrow {
-                    height: 10px;
-                }
-            }
-                a::after{
+                .nav-link::after{
                     display: none;
                 } 
+            }
         }
         #navbarNavDropdown {
             background-color: white !important;
         }
     }
+}
+
+/** desktop */
+@media (min-width: 768px) {
+        nav {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        .dropdown-menu {
+                            border-top: 10px solid $mes-cyan-color;
+                            top: 38px;
+                            text-align: center;
+                        }
+                    }
+                    
+                }
+            }
+           
+        }
 }

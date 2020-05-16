@@ -1,0 +1,17 @@
+@import '../constants/styles.constant.scss';
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    line-height: 25px;
+    background-color: $mes-navy-blue-color;
+    color: white;
+    margin-top: 50px;
+}
+
+/** desktop */
+@media (min-width: 769px) {
+
+}

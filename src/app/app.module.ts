@@ -8,6 +8,9 @@ import { MesFooterComponent } from './mes-footer/mes-footer.component';
 import { AboutUsModule } from './about-us/about-us.module';
 import { NewsModule } from './news/news.module';
 import { SystemsModule } from './systems/systems.module';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { SharedModule, HttpLoaderFactory } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,16 @@ import { SystemsModule } from './systems/systems.module';
     AppRoutingModule,
     AboutUsModule,
     NewsModule,
-    SystemsModule
+    SystemsModule,
+    SharedModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
