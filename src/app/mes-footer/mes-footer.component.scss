@@ -9,6 +9,11 @@
     background-color: $mes-navy-blue-color;
     color: white;
     margin-top: 50px;
+    .social-icons {
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+    }
 }
 
 /** desktop */

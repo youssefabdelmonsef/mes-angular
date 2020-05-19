@@ -5,5 +5,10 @@ export const IMAGES = {
         LOGO_ADV_GREEN: 'assets/png/mes-adv-green-sys-grey.png',
         LOGO_SYS_YELLOW: 'assets/png/mes-adv-grey-sys-yellow.png',
         ARROW_DOWN: 'assets/png/mes-arrow-down-cyan.png'
+    },
+    FOOTER: {
+        FACEBOOK_ICON: 'assets/png/facebook-icon.png',
+        TWITTER_ICON: 'assets/png/twitter-icon.png',
+        INSTAGRAM_ICON: 'assets/png/instagram-icon.png'
     }
 };

@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { IMAGES } from '../constants/images';
 import { Router } from '@angular/router';
-import { MES_ROUTES } from '../constants/routes.constat';
+import { MES_ROUTES } from '../constants/routes.constant';
 
 @Component({
   selector: 'mes-header',

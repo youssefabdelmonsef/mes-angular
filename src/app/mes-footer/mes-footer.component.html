@@ -1,14 +1,13 @@
 <footer class="footer py-3 px-md-4">
   <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-10 text-center text-md-left mb-3 mb-md-0">
           MES Security 2020 Developed by Candeo Promotions • <span style="font-size: 16px;">Ⓨ</span>
         </div>
-        <div class="col-12 col-md-2 d-flex justify-content-md-end">
-          <span class="pr-1">fb</span>
-          <span class="pr-1">tw</span>
-          <span class="pr-1">in</span>
-          <span>yo</span>
+        <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-end">
+          <span (click)="externalNavigation(MES_ROUTES.EXTERNAL_URL.SOCIAL_MEDIA.FACEBOOK)" class="pr-3"><img class="social-icons" src="{{IMAGES.FOOTER.FACEBOOK_ICON}}"></span>
+          <span (click)="externalNavigation(MES_ROUTES.EXTERNAL_URL.SOCIAL_MEDIA.TWITTER)" class="pr-3"><img class="social-icons" src="{{IMAGES.FOOTER.TWITTER_ICON}}"></span>
+          <span (click)="externalNavigation(MES_ROUTES.EXTERNAL_URL.SOCIAL_MEDIA.INSTAGRAM)"><img class="social-icons" src="{{IMAGES.FOOTER.INSTAGRAM_ICON}}"></span>
         </div>
     </div>
   </div>
