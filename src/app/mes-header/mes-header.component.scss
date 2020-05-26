@@ -62,6 +62,10 @@
         #navbarNavDropdown {
             background-color: white !important;
         }
+        .navbar-collapse {
+            z-index: 9;
+            box-shadow: 0px 20px 8px -4px rgba(0, 0, 0, 0.35);
+        }
     }
 }
 
@@ -80,6 +84,9 @@
                     
                 }
             }
-           
+            .navbar-collapse {
+                z-index: 9;
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+            }
         }
 }

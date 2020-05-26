@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IMAGES } from 'src/app/constants/images';
 
 @Component({
   selector: 'board-members',
@@ -9,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class BoardMembersComponent implements OnInit {
 
+  IMAGES = IMAGES;
+  
   constructor() {}
 
   ngOnInit() {
