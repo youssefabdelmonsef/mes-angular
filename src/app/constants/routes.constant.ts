@@ -8,6 +8,7 @@ export const MES_ROUTES = {
     CLIENTS: 'clients',
     CONTACT_US: 'contact-us',
     EXTERNAL_URL: {
+        CANDEO_PROMOTIONS: 'https://www.candeopromotions.com',
         SOCIAL_MEDIA: {
             FACEBOOK: 'https://www.facebook.com/mesecure/',
             TWITTER: 'https://twitter.com/mesecure',

@@ -1,0 +1,43 @@
+@import '../../../constants/styles.constant.scss';
+
+.img-text-container {
+    .primary-image {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            max-height: 450px;
+        }
+      }
+    
+    .border-text-area {
+        position: relative;
+        top: 0px;
+        .border-line {
+            border-top: 20px solid transparent;
+            &.border-line-cyan {
+                border-color: $mes-cyan-color;
+            }
+            &.border-line-orange {
+                background-color: $mes-orange-color;
+            }
+        }
+        .text-area {
+            font-family: ResamitzRegular;
+            background-color: rgb(213, 213, 213);
+            padding: 30px;
+            min-height: 200px;
+        }
+    }
+}
+
+/** desktop */
+@media (min-width: 768px) {
+    .img-text-container {
+        max-height: 750px;
+        .border-text-area {
+            position: relative;
+            top: -200px;
+        }
+    }
+}

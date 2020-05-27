@@ -20,16 +20,12 @@ export class MesHeaderComponent implements OnInit {
   }
 
   getActiveLink(url) {
-    // url.consistOf()
-    console.log(url);
-    console.log(this.router.url.includes(url));
 
     return this.router.url.includes(url);
-    // console.log(this.router.url);
   }
 
   navigate(url) {
-    console.log(url)
+
     url? this.router.navigate([url]) : '';
   }
 

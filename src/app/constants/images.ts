@@ -13,7 +13,12 @@ export const IMAGES = {
     },
     ABOUT_US: {
         WHO_WE_ARE: {
-            ONE: 'assets/png/about-us-who-we-are-1.png'
+            ONE: 'assets/png/about-us-who-we-are-1.png',
+            TWO: 'assets/png/about-us-who-we-are-2.png',
+            THREE: 'assets/png/about-us-who-we-are-3.png',
+            FOUR: 'assets/png/about-us-who-we-are-4.png',
+            FIVE: 'assets/png/about-us-who-we-are-5.png',
+            SIX: 'assets/png/about-us-who-we-are-6.png'
         },
         BOARD_MEMBERS: {
             ONE: 'assets/png/about-us-board-members-1.png'

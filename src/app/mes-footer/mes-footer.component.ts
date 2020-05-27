@@ -15,6 +15,8 @@ export class MesFooterComponent {
   }
 
   externalNavigation(url) {
-    window.location.href = url;
+    window.open(
+      url, '_blank'
+    );
   }
 }

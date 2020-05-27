@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IMAGES } from 'src/app/constants/images';
 
 @Component({
     selector: 'img-text',
@@ -6,10 +7,21 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['./img-text.component.scss'],
 })
 
-export class ImgTextComponent {
+export class ImgTextComponent implements OnInit {
 
     @Input() imgPath: any;
 
-    @Input() text: any;
+    @Input() textParagraph: any;
 
+    @Input() upperLineColor: any;
+
+    @Input() imgTextAlignmentReversed: boolean = false;
+
+    IMAGES = IMAGES;
+
+    ngOnInit() {
+        // setTimeout(()=>{
+        //     console.log(document.getElementById("full-container-height").offsetHeight);
+        // },1000)
+    }
 }
