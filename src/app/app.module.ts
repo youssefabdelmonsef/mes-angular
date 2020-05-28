@@ -11,6 +11,7 @@ import { SystemsModule } from './systems/systems.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { SharedModule, HttpLoaderFactory } from './shared/shared.module';
+import { HomePageModule } from './home-page/home-page.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SharedModule, HttpLoaderFactory } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomePageModule,
     AboutUsModule,
     NewsModule,
     SystemsModule,

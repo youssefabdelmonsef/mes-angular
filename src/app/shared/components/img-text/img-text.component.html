@@ -10,9 +10,11 @@
 
   <div class="row p-0 m-0 border-text-area">
     <!-- line color -->
-    <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-9"></div>
+    <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
+    <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-1"></div>
     <div class="border-line border-line-cyan col-12 col-md-3 mb-md-4"></div>
-    <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-9"></div>
+    <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-9"></div>
+    <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-8"></div>
     <!-- grey area -->
     <div *ngIf="!imgTextAlignmentReversed" class="col-12 col-md-6"></div>
     <div class="text-area col-12 col-md-6" [innerHTML]="textParagraph"></div>

@@ -11,6 +11,10 @@ export const IMAGES = {
         TWITTER_ICON: 'assets/png/twitter-icon.png',
         INSTAGRAM_ICON: 'assets/png/instagram-icon.png'
     },
+    HOME_PAGE: {
+        ONE: 'assets/png/home-page-1.png',
+        TWO: 'assets/png/home-page-2.png'
+    },
     ABOUT_US: {
         WHO_WE_ARE: {
             ONE: 'assets/png/about-us-who-we-are-1.png',

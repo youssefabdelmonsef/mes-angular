@@ -6,11 +6,16 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { ServicesModule } from './services/services.module';
 import { ClientsModule } from './clients/clients.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
+import { HomePageModule } from './home-page/home-page.module';
 
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/about-us', pathMatch: 'full'
+    path: '', redirectTo: '/home', pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => HomePageModule
   },
   {
     path: 'about-us',
