@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "mes-angular",
-    "staging": "mes-angular"
+    "default": "mes-angular2",
+    "staging": "mes-angular2"
   }
 }

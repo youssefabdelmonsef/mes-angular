@@ -27,5 +27,33 @@ export const IMAGES = {
         BOARD_MEMBERS: {
             ONE: 'assets/png/about-us-board-members-1.png'
         }
+    },
+    NEWS: {
+        ONE: 'assets/png/news-page-1.png',
+        TWO: 'assets/png/news-page-2.png',
+        THREE: 'assets/png/news-page-3.png',
+        FOUR: 'assets/png/news-page-4.png'
+    },
+    SYSTEMS: {
+        ONE: 'assets/png/systems-01.png',
+        TWO: 'assets/png/systems-02.png',
+        THREE: 'assets/png/systems-03.png',
+        FOUR: 'assets/png/systems-04.png',
+        FIVE: 'assets/png/systems-05.jpeg',
+        SIX: 'assets/png/systems-06.png',
+        SEVEN: 'assets/png/systems-07.png'
+    },
+    SERVICES: {
+        ONE: 'assets/png/services-page-01.png',
+        TWO: 'assets/png/services-page-02.png',
+        THREE: 'assets/png/services-page-03.png',
+        FOUR: 'assets/png/services-page-04.png',
+        FIVE: 'assets/png/services-page-05.png',
+        SIX: 'assets/png/services-page-06.png',
+        SEVEN: 'assets/png/services-page-07.png'
+    },
+    CONTACT_US: {
+        ONE: 'assets/png/contact-us-01.png',
+        TWO: 'assets/png/contact-us-02.png'
     }
 };

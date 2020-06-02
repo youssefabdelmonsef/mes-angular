@@ -1,0 +1,21 @@
+<form>
+  <div class="col-12 p-0 text">
+    <textarea [formControl]="commentField" class="form-control text-textarea col-12 mb-0"
+      [ngClass]="{'input-error': (commentField.touched && commentField.hasError('required'))}" maxLength="6000"
+      (input)="emitCommentText(commentField.value)"
+      [placeholder]="textAreaData && textAreaData.customPlaceholder? textAreaData.customPlaceholder : 'Type...'"
+      (keydown.enter)="textAreaData.textAreaSize? true : false"></textarea>
+
+    <div class="d-flex justify-content-between flex-row-reverse">
+      <!-- text count -->
+      <div class="text-count text-right">
+        <!-- 3000 -->
+      </div>
+      <!-- error/ info message if no input -->
+      <div class="text-error row">
+        <span *ngIf="textAreaData.infoMessage" class="info-message col-12 mx-3 my-1">{{textAreaData.infoMessage}}</span>
+        <span *ngIf="commentField.touched && commentField.hasError('required')" class="col-12">Please fill in the text area.</span>
+      </div>
+    </div>
+  </div>
+</form>

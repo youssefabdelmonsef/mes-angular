@@ -1,0 +1,29 @@
+@import '../constants/styles.constant.scss';
+
+
+.contact-us-input {
+    .border-line {
+        border-top: 17px solid transparent;
+        &.cyan {
+            border-color: $mes-cyan-color;
+        }
+        &.orange {
+            background-color: $mes-orange-color;
+        }
+    }
+    .contact-us-header {
+        font-size: 36px;
+        font-family: ResamitzRegular;
+    }
+    .mes-contact-info {
+        .title {
+            font-size: 16px;
+            font-family: ResamitzBold;
+        }
+        .dialer:hover {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

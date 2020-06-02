@@ -15,10 +15,10 @@
         top: 0px;
         .border-line {
             border-top: 20px solid transparent;
-            &.border-line-cyan {
+            &.cyan {
                 border-color: $mes-cyan-color;
             }
-            &.border-line-orange {
+            &.orange {
                 background-color: $mes-orange-color;
             }
         }

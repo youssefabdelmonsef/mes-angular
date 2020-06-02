@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "mes-angular2",
     "public": "dist/mes",
     "ignore": [
       "firebase.json",

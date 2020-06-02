@@ -1,21 +1,55 @@
-contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>contact-us-works
-
-<br>
+<div class="mb-5">
+    <primary-img [imgPath]="IMAGES.CONTACT_US.ONE"></primary-img>
+</div>
+<div class="col-12 pl-md-5 contact-us-input">
+    <div class="col-12 col-md-3 border-line cyan"></div>
+    <div class="contact-us-header mt-3 mb-md-4 ml-md-1">
+        Contact Us
+    </div>
+    <div class="col-12 col-md-6 mt-3 mb-4 px-0">
+        <mes-text-area class="mb-5" [textAreaData]="{
+            'customPlaceholder': 'Name'
+        }"></mes-text-area>
+        <mes-text-area class="mb-5" [textAreaData]="{
+            'customPlaceholder': 'Email'
+        }"></mes-text-area>
+        <mes-text-area class="mb-5" [textAreaData]="{
+            'customPlaceholder': 'Phone Number'
+        }"></mes-text-area>
+        <mes-text-area class="mb-2" [textAreaData]="{
+            'customPlaceholder': 'Message'
+        }"></mes-text-area>
+    </div>
+    <div class="mb-5">
+        <button class="btn btn-primary mes-btn-primary col-12 col-md-2">
+            Submit
+        </button>
+    </div>
+    <div class="row mb-5">
+        <div class="mes-contact-info col-12 col-md-6">
+            <div class="title">
+                REGISTERED ADDRESS
+            </div>
+            <div class="data mb-3">
+                Villa 1, Block 12, General Azmy Abdel-Ghany ST., El-Togareen City El-Mokattam City
+            </div>
+            <div class="title">
+                PHONE NUMBER
+            </div>
+            <div class="data dialer mb-3" (click)="openDialer()">
+                (+20) 155 000 6665 ↗
+            </div>
+            <div class="title">
+                EMAIL ADDRESS
+            </div>
+            <div class="data mb-3">
+                info@mes-security.com
+            </div>
+    
+        </div>
+        <div class="row col-12 col-md-5 pl-md-0">
+            <primary-img [imgPath]="IMAGES.CONTACT_US.TWO"></primary-img>
+            <!-- <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.847468212531!2d31.319854314699725!3d30.01253588189394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583ecd1ab0349b%3A0x1dcf5731e5f737ef!2zNzEwOCBTdHJlZXQgOSwgQWwgQWJhZ2V5YWgsINmC2LPZhSDYp9mE2K7ZhNmK2YHYqdiMIENhaXJvIEdvdmVybm9yYXRlIDExNTcx!5e0!3m2!1sen!2seg!4v1591059058442!5m2!1sen!2seg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        </div>
+    </div>
+</div>

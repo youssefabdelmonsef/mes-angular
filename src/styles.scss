@@ -39,7 +39,21 @@ html {
       /* Margin bottom by footer height */
       // margin-bottom: 100px;
       /** default font-family */
+      font-family: ResamitzRegular;
       /** default font-size */
       font-size: 14px;
+      .arabic-text {
+        direction: rtl;
+        text-align: right;
+      }
+      
+      .mes-btn-primary {
+        background-color: $mes-cyan-color;
+        border-radius: 0px;
+        border: none;
+        color: black;
+        font-family: ResamitzBold;
+        font-size: 18px;
+      }
     }
   }
