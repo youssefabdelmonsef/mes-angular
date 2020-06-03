@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light mb-5">
-  <a class="navbar-brand mx-md-5">
+  <a class="navbar-brand mx-md-5 cursor-pointer" (click)="navigate('/'+MES_ROUTES.HOME)">
     <!-- <img class="main-logo" src="{{IMAGES.MES_LOGO}}"> -->
     <img class="logo" *ngIf="!getActiveLink(MES_ROUTES.SYSTEMS) && !getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE)"
       src="{{IMAGES.HEADER.LOGO_NUETRAL}}">

@@ -25,8 +25,7 @@ export class MesHeaderComponent implements OnInit {
   }
 
   navigate(url) {
-
-    url? this.router.navigate([url]) : '';
+    url? window.location.href = url : ''
   }
 
 }

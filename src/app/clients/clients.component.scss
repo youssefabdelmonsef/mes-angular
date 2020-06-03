@@ -1,0 +1,18 @@
+@import '../constants/styles.constant.scss';
+
+
+.our-clients-area {
+    .border-line {
+        border-top: 17px solid transparent;
+        &.cyan {
+            border-color: $mes-cyan-color;
+        }
+        &.orange {
+            background-color: $mes-orange-color;
+        }
+    }
+    .our-clients-header {
+        font-size: 36px;
+        font-family: ResamitzRegular;
+    }
+}

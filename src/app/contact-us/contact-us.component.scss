@@ -20,7 +20,15 @@
             font-size: 16px;
             font-family: ResamitzBold;
         }
-        .dialer:hover {
+        .data {
+            a {
+                color: black;
+            }
+            a:hover {
+                color: blue;
+            }
+        }
+        .clickable-data:hover {
             color: blue;
             text-decoration: underline;
             cursor: pointer;

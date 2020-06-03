@@ -32,7 +32,17 @@ html {
   }
   
   body {
-    
+    .cursor-pointer {
+      cursor: pointer;
+    }
+    .mes-btn-primary {
+      background-color: $mes-cyan-color;
+      border-radius: 0px;
+      border: none;
+      color: black;
+      font-family: ResamitzBold;
+      font-size: 18px;
+    }
     main {
       /* Margin bottom by header height */
       // margin-top: 102px;
@@ -45,15 +55,6 @@ html {
       .arabic-text {
         direction: rtl;
         text-align: right;
-      }
-      
-      .mes-btn-primary {
-        background-color: $mes-cyan-color;
-        border-radius: 0px;
-        border: none;
-        color: black;
-        font-family: ResamitzBold;
-        font-size: 18px;
       }
     }
   }

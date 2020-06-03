@@ -52,6 +52,9 @@ export const IMAGES = {
         SIX: 'assets/png/services-page-06.png',
         SEVEN: 'assets/png/services-page-07.png'
     },
+    CLIENTS: {
+        ONE: 'assets/png/clients-01.png',
+    },
     CONTACT_US: {
         ONE: 'assets/png/contact-us-01.png',
         TWO: 'assets/png/contact-us-02.png'

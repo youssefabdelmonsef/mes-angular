@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IMAGES } from '../constants/images';
 
 @Component({
   selector: 'clients',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
 
+  IMAGES = IMAGES;
+  
   constructor() { }
 
   ngOnInit() {
