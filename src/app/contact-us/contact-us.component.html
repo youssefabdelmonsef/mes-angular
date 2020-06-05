@@ -21,12 +21,12 @@
         }" (textMessageEmitter)="contactUsForm.message=$event"></mes-text-area>
     </div>
     <div class="submission-area mb-5">
-        <button [disabled]="emailspinner" [ngClass]="{'opacity-half': emailspinner}" (click)="sendEmail()" class="btn mes-btn-primary col-12 col-md-2">
-            Submit
+        <button [disabled]="emailspinner" [ngClass]="{'opacity-half': emailspinner}" (click)="sendEmail()" class="btn mes-btn-primary col-12 col-md-2 mb-2">
+            <span>Submit</span>
         </button>
-        <img class="spinner position-absolute col-12 col-md-2" [hidden]="!emailspinner" src="{{IMAGES.MES_SPINNER}}">
-        <div class="col-12 col-md-4 text-success" *ngIf="emailSent">Failed submitted successfully!</div>
-        <div class="col-12 col-md-4 text-danger" *ngIf="emailFailed">Failed to submit form! Please Try again..</div>
+        <!-- <img class="spinner position-absolute col-12 col-md-2" [hidden]="emailspinner" src="{{IMAGES.MES_SPINNER}}"> -->
+        <div class="col-12 col-md-4 alert alert-success" *ngIf="emailSent">Form submitted successfully!</div>
+        <div class="col-12 col-md-4 alert alert-danger" *ngIf="emailFailed">Failed to submit form! Please Try again..</div>
     </div>
     <div class="row mb-5">
         <div class="mes-contact-info col-12 col-md-6">
