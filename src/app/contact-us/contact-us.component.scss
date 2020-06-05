@@ -33,5 +33,17 @@
             text-decoration: underline;
             cursor: pointer;
         }
+       
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-us-input {
+        .submission-area {
+            position: relative;
+            .spinner {
+                top: -39px;
+            }
+        }
     }
 }

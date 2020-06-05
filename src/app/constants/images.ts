@@ -1,5 +1,6 @@
 export const IMAGES = {
     MES_LOGO: 'assets/png/mes-logo.png',
+    MES_SPINNER: 'assets/gif/mes-spinner.gif',
     HEADER: {
         LOGO_NUETRAL: 'assets/png/mes-adv-grey-sys-grey.png',
         LOGO_ADV_GREEN: 'assets/png/mes-adv-green-sys-grey.png',

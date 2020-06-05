@@ -48,7 +48,7 @@ export class WhoWeAreComponent implements OnInit {
   high-quality security solutions in order to ensure our
   client’s satisfaction.`;
 
-  textParaghraphImgFive = `<h4>Our Vission</h4><br>To be recognized as the leading accredited security
+  textParaghraphImgFive = `<h4>Our Vision</h4><br>To be recognized as the leading accredited security
   company, providing quality security-related services in our
   local business community.`;
 

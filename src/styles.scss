@@ -35,6 +35,10 @@ html {
     .cursor-pointer {
       cursor: pointer;
     }
+    .opacity-half {
+      opacity: 0.5;
+      cursor: initial;
+    }
     .mes-btn-primary {
       background-color: $mes-cyan-color;
       border-radius: 0px;
@@ -43,6 +47,12 @@ html {
       font-family: ResamitzBold;
       font-size: 18px;
     }
+    .mes-btn-primary:focus {
+      background-color: $mes-cyan-color;
+      box-shadow: 0 0 0 0.2rem rgba(187, 192, 197, 0.5);
+      color: black;
+    }
+    
     main {
       /* Margin bottom by header height */
       // margin-top: 102px;

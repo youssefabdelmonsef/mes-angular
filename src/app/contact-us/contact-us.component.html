@@ -9,21 +9,24 @@
     <div class="col-12 col-md-6 mt-3 mb-4 px-0">
         <mes-text-area class="mb-5" [textAreaData]="{
             'customPlaceholder': 'Name'
-        }"></mes-text-area>
+        }" (textMessageEmitter)="contactUsForm.name=$event"></mes-text-area>
         <mes-text-area class="mb-5" [textAreaData]="{
             'customPlaceholder': 'Email'
-        }"></mes-text-area>
+        }" (textMessageEmitter)="contactUsForm.email=$event"></mes-text-area>
         <mes-text-area class="mb-5" [textAreaData]="{
             'customPlaceholder': 'Phone Number'
-        }"></mes-text-area>
+        }" (textMessageEmitter)="contactUsForm.number=$event"></mes-text-area>
         <mes-text-area class="mb-2" [textAreaData]="{
             'customPlaceholder': 'Message'
-        }"></mes-text-area>
+        }" (textMessageEmitter)="contactUsForm.message=$event"></mes-text-area>
     </div>
-    <div class="mb-5">
-        <button class="btn btn-primary mes-btn-primary col-12 col-md-2">
+    <div class="submission-area mb-5">
+        <button [disabled]="emailspinner" [ngClass]="{'opacity-half': emailspinner}" (click)="sendEmail()" class="btn mes-btn-primary col-12 col-md-2">
             Submit
         </button>
+        <img class="spinner position-absolute col-12 col-md-2" [hidden]="!emailspinner" src="{{IMAGES.MES_SPINNER}}">
+        <div class="col-12 col-md-4 text-success" *ngIf="emailSent">Failed submitted successfully!</div>
+        <div class="col-12 col-md-4 text-danger" *ngIf="emailFailed">Failed to submit form! Please Try again..</div>
     </div>
     <div class="row mb-5">
         <div class="mes-contact-info col-12 col-md-6">
