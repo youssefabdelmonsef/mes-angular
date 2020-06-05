@@ -29,8 +29,5 @@ export class CarouselComponent implements OnInit {
     IMAGES = IMAGES;
 
     ngOnInit() {
-        // setTimeout(()=>{
-        //     console.log(document.getElementById("full-container-height").offsetHeight);
-        // },1000)
     }
 }
