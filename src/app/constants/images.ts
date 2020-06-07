@@ -14,7 +14,8 @@ export const IMAGES = {
     },
     HOME_PAGE: {
         ONE: 'assets/png/home-page-1.png',
-        TWO: 'assets/png/home-page-2.png'
+        TWO: 'assets/png/home-page-2.png',
+        NINE: 'assets/png/home-page-9.png'
     },
     ABOUT_US: {
         WHO_WE_ARE: {
@@ -55,6 +56,36 @@ export const IMAGES = {
     },
     CLIENTS: {
         ONE: 'assets/png/clients-01.png',
+        LOGOS: {
+            L01: 'assets/png/clients-logos/l01.png',
+            L02: 'assets/png/clients-logos/l02.png',
+            L03: 'assets/png/clients-logos/l03.png',
+            L04: 'assets/png/clients-logos/l04.png',
+            L05: 'assets/png/clients-logos/l05.png',
+            L06: 'assets/png/clients-logos/l06.png',
+            L07: 'assets/png/clients-logos/l07.png',
+            L08: 'assets/png/clients-logos/l08.png',
+            L09: 'assets/png/clients-logos/l09.png',
+            L10: 'assets/png/clients-logos/l10.png',
+            L11: 'assets/png/clients-logos/l11.png',
+            L12: 'assets/png/clients-logos/l12.png',
+            L13: 'assets/png/clients-logos/l13.png',
+            L14: 'assets/png/clients-logos/l14.png',
+            L15: 'assets/png/clients-logos/l15.png',
+            L16: 'assets/png/clients-logos/l16.png',
+            L17: 'assets/png/clients-logos/l17.png',
+            L18: 'assets/png/clients-logos/l18.png',
+            L19: 'assets/png/clients-logos/l19.png',
+            L20: 'assets/png/clients-logos/l20.png',
+            L21: 'assets/png/clients-logos/l21.png',
+            L22: 'assets/png/clients-logos/l22.png',
+            L23: 'assets/png/clients-logos/l23.png',
+            L24: 'assets/png/clients-logos/l24.png',
+            L25: 'assets/png/clients-logos/l25.png',
+            L26: 'assets/png/clients-logos/l26.png',
+            L27: 'assets/png/clients-logos/l27.png',
+            L28: 'assets/png/clients-logos/l28.png',
+        }
     },
     CONTACT_US: {
         ONE: 'assets/png/contact-us-01.png',

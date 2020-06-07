@@ -66,5 +66,23 @@ html {
         direction: rtl;
         text-align: right;
       }
+      .margin-bottom-last-element {
+        margin-bottom: 120px !important;
+      }
+    
     }
   }
+
+
+  @media (min-width: 768px) {
+    html {
+      body{
+        main {
+          .margin-bottom-last-element {
+              margin-bottom: 50px !important;
+          }
+        }
+      }
+    }
+
+}

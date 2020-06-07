@@ -7,6 +7,7 @@ import { PrimaryImgComponent } from './components/primary-img/primary-img.compon
 import { ImgTextComponent } from './components/img-text/img-text.component';
 import { MesTextAreaComponent } from './components/mes-text-area/mes-text-area.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,15 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SlickCarouselModule
   ],
   exports: [
     PrimaryImgComponent,
     ImgTextComponent,
     MesTextAreaComponent,
-    CarouselComponent
+    CarouselComponent,
+    SlickCarouselModule
   ],
   providers: [
   ],

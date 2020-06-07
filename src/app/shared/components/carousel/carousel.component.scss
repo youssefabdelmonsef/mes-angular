@@ -1,5 +1,21 @@
 @import '../../../constants/styles.constant.scss';
-
+::ng-deep {
+    .carousel {
+        .slick-arrow {
+            background-color: transparent !important;
+            color: $mes-cyan-color !important;
+            font-size: 40px !important;
+            position: absolute !important;
+            top: 35%;
+            &.left-arrow {
+                left: -40px;
+            }
+            &.right-arrow {
+                right: -40px;
+            }
+        }
+    }
+}
 /** desktop */
 @media (min-width: 768px) {
     
