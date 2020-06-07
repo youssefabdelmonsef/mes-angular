@@ -1,6 +1,12 @@
 @import '../../../constants/styles.constant.scss';
 ::ng-deep {
     .carousel {
+        .slick-active:focus {
+            outline: none !important;
+            img:focus {
+                outline: none !important;
+            }
+        }
         .slick-arrow {
             background-color: transparent !important;
             color: $mes-cyan-color !important;

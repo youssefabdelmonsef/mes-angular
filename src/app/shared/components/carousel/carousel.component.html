@@ -2,7 +2,7 @@
 [config]="slideConfig" (init)="slickInit($event)"
     (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
     <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <img src="{{ slide.img }}" alt="" width="90%">
+        <img class="cursor-pointer" src="{{ slide.img }}" alt="" width="90%">
     </div>
 </ngx-slick-carousel>
 
