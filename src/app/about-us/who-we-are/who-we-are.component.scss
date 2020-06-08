@@ -8,5 +8,9 @@
 }
 
 @media (min-width: 768px) {
-   
+    .primary-image {
+        img {
+            max-height: unset;
+        }
+    }
 }

@@ -4,7 +4,7 @@ import { IMAGES } from 'src/app/constants/images';
 @Component({
   selector: 'board-members',
   templateUrl: './board-members.component.html',
-  styleUrls: ['./board-members.component.css']
+  styleUrls: ['./board-members.component.scss']
 
 })
 

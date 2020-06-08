@@ -52,7 +52,7 @@ export class CarouselComponent implements OnInit {
         { img: IMAGES.CLIENTS.LOGOS.L28 }
     ];
     slideConfig = {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,

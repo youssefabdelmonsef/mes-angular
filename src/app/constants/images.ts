@@ -27,7 +27,11 @@ export const IMAGES = {
             SIX: 'assets/png/about-us-who-we-are-6.png'
         },
         BOARD_MEMBERS: {
-            ONE: 'assets/png/about-us-board-members-1.png'
+            ONE: 'assets/png/about-us-board-members-1.png',
+            TWO: 'assets/png/about-us-board-members-2.png',
+            THREE: 'assets/png/about-us-board-members-3.png',
+            FOUR: 'assets/png/about-us-board-members-4.png',
+            FIVE_KHALED: 'assets/png/about-us-board-members-5-khaled.jpg'
         }
     },
     NEWS: {
