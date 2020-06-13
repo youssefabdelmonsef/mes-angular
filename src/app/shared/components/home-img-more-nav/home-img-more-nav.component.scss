@@ -8,24 +8,25 @@
     }
     .text-area {
         position: absolute;
-        top: 70px;
+        top: 5%;
         color: white;
         text-align: center;
         padding: 25px;
+        width: 100%;
         .textTitle {
             font-family: PlateiaBold;
             font-size: 20px;
             height: 20px;
         }
         .textBody {
-            padding: 150px 0px 0px 0px;
+            padding: 100px 0px 0px 0px;
             font-size: 14px;
         }
     }
     .more {
         cursor: pointer;
         position: absolute;
-        top: 430px;
+        top: 80%;
         color: white;
         text-align: center;
         .more-arrow {
@@ -46,7 +47,7 @@
     }
     .text-area {
         transition: top 0.3s ease-out;
-        top: 225px;
+        top: 20%;
         .textBody {
             transition: padding 0.3s ease-out;
             padding: 50px 0px 0px 0px;

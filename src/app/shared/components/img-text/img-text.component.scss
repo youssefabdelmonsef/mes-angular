@@ -45,3 +45,15 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .img-text-container {
+        .primary-image {
+            img {
+                max-height: 600px;
+            }
+          }
+        .border-text-area {
+        }
+    }
+}
