@@ -57,7 +57,7 @@ export const IMAGES = {
         TWO: 'assets/png/systems-02.png',
         THREE: 'assets/png/systems-03.png',
         FOUR: 'assets/png/systems-04.png',
-        FIVE: 'assets/png/systems-05.jpeg',
+        FIVE: 'assets/png/systems-05.png',
         SIX: 'assets/png/systems-06.png',
         SEVEN: 'assets/png/systems-07.png'
     },
