@@ -1,5 +1,23 @@
 @import '../constants/styles.constant.scss';
 
+.service {
+    background: rgb(1, 3, 3);
+    .border-line {
+        border-bottom: 10px solid $mes-cyan-color;
+        .title {
+            color: $mes-cyan-color;
+            font-size: 30px;
+            font-family: ResamitzBold;
+        }
+    }
+    .social-icons-area {
+        .social-icons {
+            width: 35px;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+}
 .our-clients-area {
     .border-line {
         border-top: 17px solid transparent;
@@ -13,5 +31,23 @@
     .our-clients-header {
         font-size: 36px;
         font-family: ResamitzRegular;
+    }
+}
+
+@media(min-width: 769px) {
+    .img-text {
+        height: 800px;
+    }
+
+    .service {
+        .border-line {
+            .title {
+            }
+        }
+        .social-icons-area {
+            margin-top: 35px;
+            .social-icons {
+            }
+        }
     }
 }

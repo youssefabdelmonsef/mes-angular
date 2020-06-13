@@ -1,3 +1,5 @@
+@import '../../constants/styles.constant.scss';
+
 .primary-image {
     max-width: 100%;
     max-height: 197px;
@@ -6,5 +8,46 @@
     width: 100%;
     img {
         max-width: 100%;
+    }
+}
+.selection-area {
+	padding: 0px 30px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-top: 25px solid $mes-cyan-color;
+    .arrow {
+        height: 30px;
+    }
+}
+
+@media(min-width: 768px) {
+    .selection-area {
+        position: relative;
+        background: red;
+        z-index: 99999999;
+        border-top: none;
+
+        .selection-profile-area {
+            border: none;
+        }
+        .selection-options {
+            position: absolute;
+            color: white;
+            font-family: PlateiaBold;
+            font-size: 14px;
+            bottom: -200px;
+            right: 31px;
+            .arrow {
+                height: 50px;
+            }
+            .option:hover {
+                color: $mes-cyan-color;
+            }
+            .selected {
+                color: $mes-cyan-color;
+                font-size: 16px;
+            }
+        }
     }
 }

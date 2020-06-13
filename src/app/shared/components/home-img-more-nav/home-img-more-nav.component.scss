@@ -1,0 +1,70 @@
+@import '../../../constants/styles.constant.scss';
+
+.home-img-area {
+    position: relative;
+    width: 100%;
+    img {
+        filter: brightness(40%);
+    }
+    .text-area {
+        position: absolute;
+        top: 70px;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        .textTitle {
+            font-family: PlateiaBold;
+            font-size: 20px;
+            height: 20px;
+        }
+        .textBody {
+            padding: 150px 0px 0px 0px;
+            font-size: 14px;
+        }
+    }
+    .more {
+        cursor: pointer;
+        position: absolute;
+        top: 430px;
+        color: white;
+        text-align: center;
+        .more-arrow {
+            font-size: 40px;
+            font-weight: bold;
+            transform: rotate(90deg);
+            line-height: 0.5;
+        }
+        .more-link {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+    }
+}
+.home-img-area:hover {
+    img {
+        filter: none;
+    }
+    .text-area {
+        transition: top 0.3s ease-out;
+        top: 225px;
+        .textBody {
+            transition: padding 0.3s ease-out;
+            padding: 50px 0px 0px 0px;
+        }
+    }
+    .more {
+        .more-arrow {
+            transition: transform 0.3s ease-out;
+            transform: rotate(-90deg);
+        }
+        .more-link {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+/** desktop */
+@media (min-width: 768px) {
+    
+}

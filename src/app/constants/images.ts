@@ -15,7 +15,15 @@ export const IMAGES = {
     HOME_PAGE: {
         ONE: 'assets/png/home-page-1.png',
         TWO: 'assets/png/home-page-2.png',
-        NINE: 'assets/png/home-page-9.png'
+        THREE: 'assets/png/home-more-1.png',
+        FOUR: 'assets/png/home-more-2.png',
+        FIVE: 'assets/png/home-more-3.png',
+        SIX: 'assets/png/home-more-4.png',
+        SEVEN: 'assets/png/home-more-5.png',
+        EIGHT: 'assets/png/home-more-6.png',
+        NINE: 'assets/png/home-page-9.png',
+        FACEBOOK_ICON: 'assets/png/facebook-icon-cyan.png',
+        INSTAGRAM_ICON: 'assets/png/instagram-icon-cyan.png'
     },
     ABOUT_US: {
         WHO_WE_ARE: {
@@ -31,7 +39,11 @@ export const IMAGES = {
             TWO: 'assets/png/about-us-board-members-2.png',
             THREE: 'assets/png/about-us-board-members-3.png',
             FOUR: 'assets/png/about-us-board-members-4.png',
-            FIVE_KHALED: 'assets/png/about-us-board-members-5-khaled.jpg'
+            FIVE_KHALED: 'assets/png/about-us-board-members-5-khaled.jpg',
+            SIX_KHALED: 'assets/png/about-us-board-members-6-mohamed.jpg',
+            SEVEN_KHALED: 'assets/png/about-us-board-members-7-azmy.jpg',
+            EIGHT_KHALED: 'assets/png/about-us-board-members-8-essam.jpg',
+            ARROW_RIGHT: 'assets/png/mes-arrow-right-cyan.png'
         }
     },
     NEWS: {

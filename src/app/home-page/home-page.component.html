@@ -2,9 +2,47 @@
     <primary-img [imgPath]="IMAGES.HOME_PAGE.ONE"></primary-img>
 </div>
 
-<img-text class="mt-5" [imgPath]="IMAGES.HOME_PAGE.TWO"
-[textParagraph]="textParaghraphImgTwo"
-[imgTextAlignmentReversed]="false"></img-text>
+<img-text class="img-text mt-5" [imgPath]="IMAGES.HOME_PAGE.TWO" [textParagraph]="textParaghraphImgTwo"
+    [imgTextAlignmentReversed]="false"></img-text>
+
+<!-- service area -->
+<div class="service row w-100 mx-0">
+    <div class="col-9 col-md-3 ml-5 my-4 border-line p-0">
+        <div class="mb-3 title">OUR SERVICES</div>
+    </div>
+    <div class="social-icons-area col-12 col-md-2 pr-2 text-right ml-md-auto pr-5">
+        <span (click)="externalNavigation(MES_ROUTES.EXTERNAL_URL.SOCIAL_MEDIA.FACEBOOK)" class="pr-3"><img
+                class="social-icons" src="{{IMAGES.HOME_PAGE.FACEBOOK_ICON}}"></span>
+        <span (click)="externalNavigation(MES_ROUTES.EXTERNAL_URL.SOCIAL_MEDIA.FACEBOOK)" class="pr-3"><img
+                class="social-icons" src="{{IMAGES.HOME_PAGE.INSTAGRAM_ICON}}"></span>
+    </div>
+</div>
+
+<div class="row w-100 mx-0">
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.THREE" [textTitle]="textTitleThree"
+    [textBody]="textBodyThree"></home-img-more-nav>
+
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.FOUR" [textTitle]="textTitleFour"
+    [textBody]="textBodyFour"></home-img-more-nav>
+
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.FIVE" [textTitle]="textTitleFive"
+    [textBody]="textBodyFive"></home-img-more-nav>
+
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.SIX" [textTitle]="textTitleSix"
+    [textBody]="textBodySix"></home-img-more-nav>
+
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.SEVEN" [textTitle]="textTitleSeven"
+    [textBody]="textBodySeven"></home-img-more-nav>
+
+    <home-img-more-nav class="col-12 col-md-4 p-0"
+    [imgPath]="IMAGES.HOME_PAGE.EIGHT" [textTitle]="textTitleEight"
+    [textBody]="textBodyEight"></home-img-more-nav>
+</div>
 
 <div class="mb-5">
     <primary-img [imgPath]="IMAGES.HOME_PAGE.NINE"></primary-img>

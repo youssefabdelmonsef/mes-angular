@@ -1,0 +1,11 @@
+<div class="home-img-area">
+    <img class="col-12 p-0" src="{{imgPath}}">
+    <div class="text-area">
+        <div class="textTitle" [innerText]="textTitle"></div>
+        <div class="textBody" [innerText]="textBody"></div>
+    </div>
+    <div (click)="navigate('/'+MES_ROUTES.SYSTEMS)" class="col-12 more">
+        <div class="more-arrow"> > </div>
+        <div class="more-link">MORE</div>
+    </div>
+</div>
