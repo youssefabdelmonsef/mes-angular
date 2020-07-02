@@ -92,10 +92,10 @@ export class CarouselComponent implements OnInit {
     }
 
     afterChange(e) {
-        console.log('afterChange');
+        // console.log('afterChange');
     }
 
     beforeChange(e) {
-        console.log('beforeChange');
+        // console.log('beforeChange');
     }
 }

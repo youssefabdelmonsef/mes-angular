@@ -12,7 +12,9 @@ export class MesHeaderComponent implements OnInit {
 
   IMAGES = IMAGES;
   MES_ROUTES = MES_ROUTES;
-  
+  overAdvisoryGreyFlag = false;
+  overSystemsGreyFlag = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -25,7 +27,14 @@ export class MesHeaderComponent implements OnInit {
   }
 
   navigate(url) {
-    url? window.location.href = url : ''
+    url? window.location.href = url : '';
+  }
+
+  overAdvisoryGrey(action) {
+    this.overAdvisoryGreyFlag = action;
+  }
+  overSystemsGrey(action) {
+    this.overSystemsGreyFlag = action;
   }
 
 }

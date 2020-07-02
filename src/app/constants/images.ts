@@ -5,7 +5,12 @@ export const IMAGES = {
         LOGO_NUETRAL: 'assets/png/mes-adv-grey-sys-grey.png',
         LOGO_ADV_GREEN: 'assets/png/mes-adv-green-sys-grey.png',
         LOGO_SYS_YELLOW: 'assets/png/mes-adv-grey-sys-yellow.png',
-        ARROW_DOWN: 'assets/png/mes-arrow-down-cyan.png'
+        ARROW_DOWN: 'assets/png/mes-arrow-down-cyan.png',
+        MES_LOGO: 'assets/png/header-mes-logo.png',
+        ADVISORY_GREY: 'assets/png/header-advisory-grey.png',
+        SYSTEMS_GREY: 'assets/png/header-systems-grey.png',
+        ADVISORY_GREEN: 'assets/png/header-advisory-green.png',
+        SYSTEMS_YELLOW: 'assets/png/header-systems-yellow.png'
     },
     FOOTER: {
         FACEBOOK_ICON: 'assets/png/facebook-icon.png',

@@ -66,6 +66,30 @@
 }
 
 /** desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+
+    .home-img-area {
+        .text-area {
+            top: 30%;
+            .textTitle {
+                margin-bottom: 5px;
+            }
+            .textBody {
+                padding: 120px 0px 0px 0px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .home-img-area:hover {
+        .text-area {
+            transition: top 0.3s ease-out;
+            top: 40%;
+            .textBody {
+                transition: padding 0.3s ease-out;
+                padding: 40px 0px 0px 0px;
+            }
+        }
+    }
     
 }
