@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { IMAGES } from 'src/app/constants/images';
+import { trigger, style, transition, animate } from '@angular/animations';
 
 export enum BORDER_LINE_COLOR {
     CYAN = 'cyan',
@@ -9,7 +10,7 @@ export enum BORDER_LINE_COLOR {
 @Component({
     selector: 'img-text',
     templateUrl: './img-text.component.html',
-    styleUrls: ['./img-text.component.scss'],
+    styleUrls: ['./img-text.component.scss']
 })
 
 export class ImgTextComponent implements OnInit {
@@ -23,12 +24,14 @@ export class ImgTextComponent implements OnInit {
     @Input() imgTextAlignmentReversed: boolean = false;
 
     @Input() borderLineColor: string = BORDER_LINE_COLOR.CYAN; // default color is cyan
-    
+
     @Input() arabicText: boolean = false;
 
     IMAGES = IMAGES;
-
+    id = false;
+    
     ngOnInit() {
-        
+
     }
+    
 }

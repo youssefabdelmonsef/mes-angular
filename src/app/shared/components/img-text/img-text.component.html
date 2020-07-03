@@ -1,25 +1,29 @@
-<div class="img-text-container mb-5 mb-md-0" id="full-container-height">
+<div class="img-text-container mb-5 mb-md-0" [ngClass]="imgTextAlignmentReversed? 'reverse-alignment' : 'default-alignment'"
+id="full-container-height">
 
-  <div class="row p-0 m-0">
+  <div>
+    <div class="row p-0 m-0">
 
-    <div class="row primary-image mx-auto">
-      <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-5"></div>
-      <img class="col-12 col-md-7 px-0" src="{{imgPath}}">
+      <div class="row primary-image mx-auto">
+        <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-5"></div>
+        <img class="col-12 col-md-7 px-0" src="{{imgPath}}">
+      </div>
+    </div>
+
+    <div class="row p-0 m-0 border-text-area">
+
+      <!-- line color -->
+      <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
+      <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-1"></div>
+      <div class="border-line col-12 col-md-3 mb-md-4" [ngClass]="[borderLineColor]"></div>
+      <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-9"></div>
+      <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-8"></div>
+
+      <!-- grey area -->
+      <div *ngIf="!imgTextAlignmentReversed" class="col-12 col-md-6"></div>
+      <div class="text-area col-12 col-md-6" [ngClass]="{'arabic-text': arabicText}" [innerHTML]="textParagraph"></div>
+
     </div>
   </div>
 
-  <div class="row p-0 m-0 border-text-area">
-
-    <!-- line color -->
-    <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
-    <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-1"></div>
-    <div class="border-line col-12 col-md-3 mb-md-4" [ngClass]="[borderLineColor]"></div>
-    <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-9"></div>
-    <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-8"></div>
-
-    <!-- grey area -->
-    <div *ngIf="!imgTextAlignmentReversed" class="col-12 col-md-6"></div>
-    <div class="text-area col-12 col-md-6" [ngClass]="{'arabic-text': arabicText}" [innerHTML]="textParagraph"></div>
-  
-  </div>
 </div>

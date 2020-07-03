@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { IMAGES } from '../constants/images';
 import { MES_ROUTES } from '../constants/routes.constant';
 
@@ -8,6 +8,17 @@ import { MES_ROUTES } from '../constants/routes.constant';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+
+  @ViewChild('chatTeaser') chatTeaser: ElementRef;
+
+@HostListener('window:scroll')
+checkScroll() {
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+
+    if (this.chatTeaser && this.chatTeaser.nativeElement.offsetTop >= scrollPosition) {
+        this.test();
+    }
+}
 
   MES_ROUTES = MES_ROUTES;
   
@@ -59,6 +70,10 @@ export class HomePageComponent implements OnInit {
     window.open(
       url, '_blank'
     );
+  }
+
+  test() {
+    // console.log(12121212)
   }
 
 }

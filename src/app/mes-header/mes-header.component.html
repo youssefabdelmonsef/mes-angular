@@ -4,14 +4,14 @@
     <div class="sub-logos-container">
       <img class="sub-logo advisory-logo-grey"[ngClass]="{'d-none': getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE) || overAdvisoryGreyFlag}"
         src="{{IMAGES.HEADER.ADVISORY_GREY}}"
-        (mouseenter)="overAdvisoryGrey(true)">
+        (mouseenter)="overAdvisoryGrey(true)" (click)="navigate('/'+MES_ROUTES.ABOUT_US_WHO_WE_ARE)">
       <img class="sub-logo advisory-logo-green d-none"
         [ngClass]="{'d-inline': getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE) || overAdvisoryGreyFlag}"
         (mouseleave) ="overAdvisoryGrey(false)"
         src="{{IMAGES.HEADER.ADVISORY_GREEN}}" (click)="navigate('/'+MES_ROUTES.ABOUT_US_WHO_WE_ARE)">
       <img class="sub-logo systems-logo-grey" [ngClass]="{'d-none': getActiveLink(MES_ROUTES.SYSTEMS) || overSystemsGreyFlag}"
         src="{{IMAGES.HEADER.SYSTEMS_GREY}}"
-        (mouseenter)="overSystemsGrey(true)">
+        (mouseenter)="overSystemsGrey(true)" (click)="navigate('/'+MES_ROUTES.SYSTEMS)">
       <img class="sub-logo systems-logo-yellow d-none" [ngClass]="{'d-inline': getActiveLink(MES_ROUTES.SYSTEMS) || overSystemsGreyFlag}"
       (mouseleave) ="overSystemsGrey(false)"
       src="{{IMAGES.HEADER.SYSTEMS_YELLOW}}" (click)="navigate('/'+MES_ROUTES.SYSTEMS)">
