@@ -26,7 +26,7 @@ export const IMAGES = {
         SIX: 'assets/png/home-more-4.png',
         SEVEN: 'assets/png/home-more-5.png',
         EIGHT: 'assets/png/home-more-6.png',
-        NINE: 'assets/png/home-page-9.png',
+        NINE: 'assets/png/home-page-9-2.png',
         FACEBOOK_ICON: 'assets/png/facebook-icon-cyan.png',
         INSTAGRAM_ICON: 'assets/png/instagram-icon-cyan.png'
     },

@@ -18,6 +18,27 @@
         }
     }
 }
+.img-nine {
+    position: relative;
+    .img-nine-text {
+        top: 20%;
+        position: absolute;
+        color: $mes-dark-navy-blue-color;
+        .primary-text {
+            font-size: 10px;
+            font-family: ResamitzBold;
+            .highlited-text {
+                color:white;
+                background-color: $mes-dark-navy-blue-color;
+                font-family: PlateiaBold;
+            }
+        }
+        .secondary-text {
+            font-size: 8px;
+            padding-top: 5px;
+        }
+    }
+}
 .our-clients-area {
     .border-line {
         border-top: 17px solid transparent;
@@ -34,11 +55,68 @@
     }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
     .img-text {
         height: 800px;
     }
 
+    .img-nine {
+        position: relative;
+        .img-nine-text {
+            top: 25%;
+            .primary-text {
+                font-size: 22px;
+                .highlited-text {
+                }
+            }
+            .secondary-text {
+                font-size: 17px;
+                padding-top: 0px;
+            }
+        }
+        .counter-container {
+            bottom: 0px;
+            left: 34%;
+        }
+    }
+    .service {
+        .border-line {
+            .title {
+            }
+        }
+        .social-icons-area {
+            margin-top: 35px;
+            .social-icons {
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .img-text {
+        height: 800px;
+    }
+
+    .img-nine {
+        position: relative;
+        .img-nine-text {
+            top: 32%;
+            .primary-text {
+                font-size: 26px;
+                .highlited-text {
+                }
+            }
+            .secondary-text {
+                font-size: 20px;
+                padding-top: 0px;
+            }
+        }
+        .counter-container {
+            position: absolute;
+            bottom: 0px;
+            left: 34%;
+        }
+    }
     .service {
         .border-line {
             .title {

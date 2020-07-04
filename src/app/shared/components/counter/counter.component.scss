@@ -1,0 +1,77 @@
+@import '../../../constants/styles.constant.scss';
+
+/** mobile */
+.bar {
+    background-color: $mes-navy-blue-color;
+    color: #ffffff;
+    width: 110px;
+    margin-right: 8px;
+    // height: 300px;
+    // animation: slideInFromLeft 8s 1;
+    // transform: rotate(180deg);
+    &.clients{
+        height: 120px;
+        bottom: 120px;
+    }
+    &.locations{
+        height: 80px;
+        bottom: 80px;
+        margin-top: 40px;
+    }
+    &.cases-completed{
+        height: 100px;
+        bottom: 100px;
+        margin-top: 20px;
+    }
+    .number-counter {
+        font-family: PlateiaBold;
+        font-size: 20px;
+    }
+    .name-text {
+        font-size: 12px;
+    }
+}
+
+
+// @keyframes slideInFromLeft {
+//     from {height: 0px;}
+//     to {height: 200px;}
+//     // 0% {
+//     //   transform: translateX(-100%);
+//     // }
+//     // 100% {
+//     //   transform: translateX(0);
+//     // }
+//   }
+
+
+/** desktop */
+@media (min-width: 768px) {
+
+    .bar {
+        width: 110px;
+        margin-right: 25px;
+
+        &.clients{
+            height: 120px;
+            bottom: 120px;
+        }
+        &.locations{
+            height: 80px;
+            bottom: 80px;
+            margin-top: 40px;
+        }
+        &.cases-completed{
+            height: 100px;
+            bottom: 100px;
+            margin-top: 20px;
+        }
+        .number-counter {
+            font-family: PlateiaBold;
+            font-size: 20px;
+        }
+        .name-text {
+            font-size: 12px;
+        }
+    }
+}

@@ -44,8 +44,24 @@
     [textBody]="textBodyEight"></home-img-more-nav>
 </div>
 
-<div class="mb-5">
+<div class="img-nine mb-5">
     <primary-img [imgPath]="IMAGES.HOME_PAGE.NINE"></primary-img>
+    <div class="row img-nine-text w-100">
+        <div class="m-auto primary-text">
+            PROVIDE SECURITY SINCE <span class="highlited-text p-1 pb-2">10 YEARS</span> WITH TRUST
+        </div>
+        <div class="m-auto secondary-text">
+            Our mission is to be the best by bringing the most value to our clients.
+        </div>
+    </div>
+    <div class="counter-container row m-auto d-felx justify-content-center">
+        <counter [finalNumber]="200" [counterTimeout]="2" [incrementStep]="1"
+        [nameText]="'CLIENTS'" [heightClass]="'clients'"></counter>
+        <counter [finalNumber]="70" [counterTimeout]="2" [incrementStep]="1"
+        [nameText]="'LOCATIONS'" [heightClass]="'locations'"></counter>
+        <counter [finalNumber]="100" [counterTimeout]="2" [incrementStep]="1"
+        [nameText]="'CASES COMPLETED'" [heightClass]="'cases-completed'"></counter>
+    </div>
 </div>
 
 <div class="col-12 pl-md-5 our-clients-area">

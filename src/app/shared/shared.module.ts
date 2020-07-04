@@ -9,6 +9,7 @@ import { MesTextAreaComponent } from './components/mes-text-area/mes-text-area.c
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HomeImgMoreNavComponent } from './components/home-img-more-nav/home-img-more-nav.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeImgMoreNavComponent } from './components/home-img-more-nav/home-img
     ImgTextComponent,
     MesTextAreaComponent,
     CarouselComponent,
-    HomeImgMoreNavComponent
+    HomeImgMoreNavComponent,
+    CounterComponent
   ],
   entryComponents: [ // dialogs here
    
@@ -33,7 +35,8 @@ import { HomeImgMoreNavComponent } from './components/home-img-more-nav/home-img
     MesTextAreaComponent,
     CarouselComponent,
     HomeImgMoreNavComponent,
-    SlickCarouselModule
+    SlickCarouselModule,
+    CounterComponent
   ],
   providers: [
   ],
