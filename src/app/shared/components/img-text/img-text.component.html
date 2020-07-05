@@ -10,7 +10,7 @@ id="full-container-height">
       </div>
     </div>
 
-    <div class="row p-0 m-0 border-text-area">
+    <div *ngIf="textParagraph" class="row p-0 m-0 border-text-area">
 
       <!-- line color -->
       <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
