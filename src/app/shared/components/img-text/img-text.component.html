@@ -15,13 +15,13 @@ id="full-container-height">
       <!-- line color -->
       <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
       <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-1"></div>
-      <div *ngIf="textParagraph" class="border-line col-12 col-md-3 mb-md-4" [ngClass]="[borderLineColor]"></div>
+      <div class="border-line col-12 col-md-3 mb-md-4" [ngClass]="[borderLineColor]"></div>
       <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-9"></div>
       <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-8"></div>
 
       <!-- grey area -->
       <div *ngIf="!imgTextAlignmentReversed" class="col-12 col-md-6"></div>
-      <div *ngIf="textParagraph" class="text-area col-12 col-md-6" [ngClass]="{'arabic-text': arabicText}" [innerHTML]="textParagraph"></div>
+      <div class="text-area col-12 col-md-6" [ngClass]="{'arabic-text': arabicText}" [innerHTML]="textParagraph"></div>
 
     </div>
   </div>

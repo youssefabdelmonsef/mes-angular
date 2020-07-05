@@ -67,7 +67,15 @@ export const IMAGES = {
         FOUR: 'assets/png/systems-04.png',
         FIVE: 'assets/png/systems-05.png',
         SIX: 'assets/png/systems-06.png',
-        SEVEN: 'assets/png/systems-07.png'
+        SEVEN: 'assets/png/systems-07.png',
+        EIGHT: 'assets/png/systems-08.png',
+        NINE: 'assets/png/systems-09.png',
+        TEN: 'assets/png/systems-10.png',
+        ELEVEN: 'assets/png/systems-11.png',
+        TWELVE: 'assets/png/systems-12.png',
+        THIRTEEN: 'assets/png/systems-13.png',
+        FOURTEEN: 'assets/png/systems-14.png',
+        FIFTEEN: 'assets/png/systems-15.png'
     },
     SERVICES: {
         ONE: 'assets/png/services-page-01.png',
