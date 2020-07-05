@@ -37,7 +37,10 @@ export const IMAGES = {
             THREE: 'assets/png/about-us-who-we-are-3.png',
             FOUR: 'assets/png/about-us-who-we-are-4.png',
             FIVE: 'assets/png/about-us-who-we-are-5.png',
-            SIX: 'assets/png/about-us-who-we-are-6.png'
+            SIX: 'assets/png/about-us-who-we-are-6.png',
+            SEVEN: 'assets/png/about-us-who-we-are-7.png',
+            EIGHT: 'assets/png/about-us-who-we-are-8.png',
+            NINE: 'assets/png/about-us-who-we-are-9.png',
         },
         BOARD_MEMBERS: {
             ONE: 'assets/png/about-us-board-members-1.png',

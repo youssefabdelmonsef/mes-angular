@@ -1,3 +1,5 @@
+@import '../../constants/styles.constant.scss';
+
 .primary-image {
     width: 100%;
     height: auto;
@@ -5,6 +7,14 @@
         width: 100%;
         max-height: 600px;
     }
+}
+.our-partners-title {
+    text-transform: capitalize;
+    color: $mes-cyan-color;
+    border-bottom: 14px solid $mes-cyan-color;
+    font-size: 28px;
+    font-family: ResamitzBold;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
