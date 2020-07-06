@@ -38,15 +38,16 @@
             font-size: 14px;
             bottom: -200px;
             right: 31px;
+            text-align: right;
             .arrow {
-                height: 50px;
+                height: 25px;
             }
             .option:hover {
                 color: $mes-cyan-color;
             }
             .selected {
                 color: $mes-cyan-color;
-                font-size: 16px;
+                font-size: 15px;
             }
         }
     }
