@@ -15,6 +15,8 @@ export enum BORDER_LINE_COLOR {
 
 export class ImgTextComponent implements OnInit {
 
+    @ViewChild('targetTextArea') targetElement: ElementRef;
+
     @Input() imgPath: any;
 
     @Input() textParagraph: any;
@@ -27,11 +29,27 @@ export class ImgTextComponent implements OnInit {
 
     @Input() arabicText: boolean = false;
 
+    height;
+    heightStyle;
+
     IMAGES = IMAGES;
     id = false;
-    
-    ngOnInit() {
+    showAfterLoad = false;
 
+    ngOnInit() {
+        // this.showAfterLoad = true;
+        setTimeout(() => {
+            if (window.innerWidth > 991) {
+                this.height = this.targetElement.nativeElement.offsetHeight - 100;
+                console.log(1, this.height)
+                // this.targetElement.nativeElement.offsetHeight = this.height - 400;
+                this.heightStyle = { "height": this.height + "px" };
+            }
+        }, 500);
     }
-    
+    // ngAfterViewInit() {
+    //     const height = this.targetElement.nativeElement.offsetHeight;
+    //         console.log(height)
+    // }
+
 }

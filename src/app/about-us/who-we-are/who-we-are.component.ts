@@ -43,14 +43,12 @@ export class WhoWeAreComponent implements OnInit {
   about the most dependable way to protect themselves
   against various sources of risks.`;
 
-  textParaghraphImgFour = `<strong style="font-family: sans-serif; font-weight: bold;">Middle East SYSTEMS</strong> established in 2009,
-  is an elite group of former police and military officers,
-  security specialists, highly experienced lawyers and well-trained administrators
-  who use state-of-the-art leadership techniques. <br>
-  Our main focus is on Security Guard Services, Travel and Close Protection, Corporate Events, Corporate Investigations. 
-  Product Protection. Due Di igence and Training throughout our global network of consultants. 
-  MES also advises its multinational customers and partners across the Middle East and Africa region aDout the best way to 
-  protect themselves against various sources of risk`;
+  textParaghraphImgFour = `<strong style="font-family: sans-serif; font-weight: bold;">Middle East SYSTEMS</strong> was established in 2018, 
+  to complete what Middle East Security started, with the technological factor, in which it comprises the most well-trained technicians, 
+  by our top leading qualified engineers, who use state-of-the-art leadership techniques.<br><br>
+  Middle East Systems provide Access Control Systems, Closed Circuit Television CCTV, Intelligent Video Analyzing Solutions, 
+  Fleet Tracking, Intrusion Detection Systems, Fire Alarm systems, Safety, and Security Film, along with Metal Detector Gates, 
+  Road Blockers, Tire Killer, Turnstile Gates, Mantrap Gates, Time-Attendance, and X-Ray Machines.`;
 
   textParaghraphImgFive = `<h4>Our Mission</h4><br>Identify and mitigate our client’s risks, to be able to
   operate safely with efciency and provide a wide range of
