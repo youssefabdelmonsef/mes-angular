@@ -44,6 +44,9 @@
         }
     }
 }
+.visibility-hidden {
+    visibility: hidden;
+}
 @keyframes deafultAlignment200 {
     from {left: -200px;}
     to {left: 0px;}
@@ -52,6 +55,11 @@
 @keyframes reverseAlignment200 {
     from {right: -200px;}
     to {right: 0px;}
+}
+
+.hidden-img  {
+    height: 0px !important;
+    visibility: hidden;
 }
 
 /** desktop */
@@ -64,6 +72,7 @@
         .border-text-area {
             position: relative;
             top: -200px;
+            min-height: 400px;
         }
     }
 }

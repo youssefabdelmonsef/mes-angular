@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef, HostListener, AfterViewInit } from '@angular/core';
 import { IMAGES } from 'src/app/constants/images';
 import { trigger, style, transition, animate } from '@angular/animations';
 
@@ -13,8 +13,9 @@ export enum BORDER_LINE_COLOR {
     styleUrls: ['./img-text.component.scss']
 })
 
-export class ImgTextComponent implements OnInit {
+export class ImgTextComponent implements OnInit, AfterViewInit {
 
+    @ViewChild('targetImage') targetImage: ElementRef;
     @ViewChild('targetTextArea') targetElement: ElementRef;
 
     @Input() imgPath: any;
@@ -37,19 +38,21 @@ export class ImgTextComponent implements OnInit {
     showAfterLoad = false;
 
     ngOnInit() {
-        // this.showAfterLoad = true;
+        this.showAfterLoad = true;
         setTimeout(() => {
-            if (window.innerWidth > 991) {
-                this.height = this.targetElement.nativeElement.offsetHeight - 100;
-                console.log(1, this.height)
-                // this.targetElement.nativeElement.offsetHeight = this.height - 400;
-                this.heightStyle = { "height": this.height + "px" };
-            }
-        }, 500);
+                if (window.innerWidth > 991) {
+                    this.height = this.targetImage.nativeElement.offsetHeight +
+                        this.targetElement.nativeElement.offsetHeight - 125;
+                    console.log(this.targetImage.nativeElement.offsetHeight,
+                        this.targetElement.nativeElement.offsetHeight, 
+                        this.height)
+                    this.heightStyle = { "height": this.height + "px" };
+                }
+        }, 1500);    
     }
-    // ngAfterViewInit() {
-    //     const height = this.targetElement.nativeElement.offsetHeight;
-    //         console.log(height)
-    // }
+
+    ngAfterViewInit() {
+    }
+
 
 }

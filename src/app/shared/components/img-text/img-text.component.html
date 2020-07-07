@@ -1,8 +1,8 @@
-<div #targetTextArea class="img-text-container mb-5 mb-md-0" [ngClass]="imgTextAlignmentReversed? 'reverse-alignment' : 'default-alignment'"
+<div *ngIf="showAfterLoad" class="img-text-container mb-5 mb-md-0" [ngClass]="imgTextAlignmentReversed? 'reverse-alignment' : 'default-alignment'"
 id="full-container-height" [ngStyle]="heightStyle">
 
   <div>
-    <div class="row p-0 m-0">
+    <div #targetImage  class="row p-0 m-0">
 
       <div class="row primary-image mx-auto">
         <div *ngIf="imgTextAlignmentReversed" class="col-0 col-md-5"></div>
@@ -10,7 +10,7 @@ id="full-container-height" [ngStyle]="heightStyle">
       </div>
     </div>
 
-    <div *ngIf="textParagraph" class="row p-0 m-0 border-text-area">
+    <div #targetTextArea [ngClass]="{'visibility-hidden': !textParagraph}" class="row p-0 m-0 border-text-area">
 
       <!-- line color -->
       <div *ngIf="!imgTextAlignmentReversed" class="col-0 col-md-8"></div>
@@ -26,4 +26,8 @@ id="full-container-height" [ngStyle]="heightStyle">
     </div>
   </div>
 
+</div>
+
+<div class="hidden-img">
+  <img class="col-12 col-md-7 px-0" src="{{imgPath}}">
 </div>
