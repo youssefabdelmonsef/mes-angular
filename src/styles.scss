@@ -79,9 +79,12 @@ html {
       body{
         main {
           .margin-bottom-last-element {
-              margin-bottom: 35px !important;
+              margin-bottom: 35px !important; 
+              &.more {
+                margin-bottom: 150px !important;
+              }
               &.extra {
-                margin-bottom: 550px !important;
+                margin-bottom: 500px !important;
               }
           }
         }

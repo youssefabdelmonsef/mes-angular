@@ -31,6 +31,7 @@
             }
             &.orange {
                 background-color: $mes-orange-color;
+                height: 10px;
             }
         }
         .text-area {
@@ -66,7 +67,7 @@
 @media (min-width: 768px) {
     .img-text-container {
         .primary-image {
-            min-height: 420px;
+            min-height: 430px !important;
             img {
             }
           }

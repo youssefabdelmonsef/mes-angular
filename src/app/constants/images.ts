@@ -46,7 +46,7 @@ export const IMAGES = {
             ONE: 'assets/png/about-us-board-members-1.png',
             TWO: 'assets/png/about-us-board-members-2.jpeg',
             THREE: 'assets/png/about-us-board-members-3.png',
-            FOUR: 'assets/png/about-us-board-members-4.jpeg',
+            FOUR: 'assets/png/about-us-board-members-4.JPG',
             FIVE_KHALED: 'assets/png/about-us-board-members-5-khaled.jpg',
             SIX_KHALED: 'assets/png/about-us-board-members-6-mohamed.jpg',
             SEVEN_KHALED: 'assets/png/about-us-board-members-7-azmy.jpg',
