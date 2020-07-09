@@ -1,6 +1,5 @@
-import { Component, Input, OnInit, ViewChild, ElementRef, HostListener, AfterViewInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { IMAGES } from 'src/app/constants/images';
-import { trigger, style, transition, animate } from '@angular/animations';
 
 export enum BORDER_LINE_COLOR {
     CYAN = 'cyan',
@@ -13,7 +12,7 @@ export enum BORDER_LINE_COLOR {
     styleUrls: ['./img-text.component.scss']
 })
 
-export class ImgTextComponent implements OnInit, AfterViewInit {
+export class ImgTextComponent implements OnInit {
 
     @ViewChild('targetImage') targetImage: ElementRef;
     @ViewChild('targetTextArea') targetElement: ElementRef;
@@ -30,6 +29,8 @@ export class ImgTextComponent implements OnInit, AfterViewInit {
 
     @Input() arabicText: boolean = false;
 
+    @Input() marginBottom;
+
     height;
     heightStyle;
 
@@ -38,11 +39,11 @@ export class ImgTextComponent implements OnInit, AfterViewInit {
     showAfterLoad = false;
 
     ngOnInit() {
-        this.showAfterLoad = true;
+        this.marginBottom? this.marginBottom+=200 : this.marginBottom=false;
         setTimeout(() => {
                 if (window.innerWidth > 991) {
                     this.height = this.targetImage.nativeElement.offsetHeight +
-                        this.targetElement.nativeElement.offsetHeight - 125;
+                        this.targetElement.nativeElement.offsetHeight - (this.marginBottom || 125);
                     console.log(this.targetImage.nativeElement.offsetHeight,
                         this.targetElement.nativeElement.offsetHeight, 
                         this.height)
@@ -50,9 +51,4 @@ export class ImgTextComponent implements OnInit, AfterViewInit {
                 }
         }, 1500);    
     }
-
-    ngAfterViewInit() {
-    }
-
-
 }

@@ -58,34 +58,13 @@
     to {right: 0px;}
 }
 
-.hidden-img  {
-    height: 0px !important;
-    visibility: hidden;
-}
 
 /** desktop */
 @media (min-width: 768px) {
     .img-text-container {
-        .primary-image {
-            min-height: 430px !important;
-            img {
-            }
-          }
         .border-text-area {
             position: relative;
             top: -200px;
-            min-height: 400px;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .img-text-container {
-        .primary-image {
-            img {
-            }
-          }
-        .border-text-area {
         }
     }
 }

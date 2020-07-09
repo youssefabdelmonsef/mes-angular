@@ -1,4 +1,4 @@
-<div class="bar text-center" [ngClass]="heightClass" (mouseenter)="resetCount()">
+<div class="bar text-center" [ngClass]="heightClass" (click)="resetCount()" (mouseenter)="resetCount()">
     <div class="number-counter">
         {{currentNumber}}+
     </div>
