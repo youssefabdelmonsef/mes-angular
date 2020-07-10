@@ -23,7 +23,7 @@ export const IMAGES = {
         SIX: 'assets/png/home-more-4.png',
         SEVEN: 'assets/png/home-more-5.png',
         EIGHT: 'assets/png/home-more-6.png',
-        NINE: 'assets/png/home-page-9-2.png',
+        NINE: 'assets/png/home-page-9.png',
         FACEBOOK_ICON: 'assets/png/facebook-icon-cyan.png',
         INSTAGRAM_ICON: 'assets/png/instagram-icon-cyan.png'
     },
@@ -45,9 +45,13 @@ export const IMAGES = {
             THREE: 'assets/png/about-us-board-members-3.png',
             FOUR: 'assets/png/about-us-board-members-4.JPG',
             FIVE_KHALED: 'assets/png/about-us-board-members-5-khaled.jpg',
+            FIVE_KHALED_MOBILE: 'assets/png/about-us-board-members-5-khaled-mobile.jpg',
             SIX_KHALED: 'assets/png/about-us-board-members-6-mohamed.jpg',
+            SIX_KHALED_MOBILE: 'assets/png/about-us-board-members-6-mohamed-mobile.jpg',
             SEVEN_KHALED: 'assets/png/about-us-board-members-7-azmy.jpg',
+            SEVEN_KHALED_MOBILE: 'assets/png/about-us-board-members-7-azmy-mobile.jpg',
             EIGHT_KHALED: 'assets/png/about-us-board-members-8-essam.jpg',
+            EIGHT_KHALED_MOBILE: 'assets/png/about-us-board-members-8-essam-mobile.jpg',
             ARROW_RIGHT: 'assets/png/mes-arrow-right-cyan.png'
         }
     },

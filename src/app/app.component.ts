@@ -17,10 +17,15 @@ export class AppComponent implements OnInit{
     this.translateService.setDefaultLang('en');
     this.translateService.use('en');
     this.pload(
-      IMAGES.MES_LOGO,
-      IMAGES.HOME_PAGE.ONE,
-      IMAGES.HOME_PAGE.ONE,
       IMAGES.HOME_PAGE.TWO,
+      IMAGES.HOME_PAGE.ONE,
+      IMAGES.HOME_PAGE.THREE,
+      IMAGES.HOME_PAGE.FOUR,
+      IMAGES.HOME_PAGE.FIVE,
+      IMAGES.HOME_PAGE.SIX,
+      IMAGES.HOME_PAGE.SEVEN,
+      IMAGES.HOME_PAGE.EIGHT,
+      IMAGES.HOME_PAGE.NINE,
       IMAGES.ABOUT_US.WHO_WE_ARE.ONE,
       IMAGES.ABOUT_US.WHO_WE_ARE.TWO,
       IMAGES.ABOUT_US.WHO_WE_ARE.THREE,
@@ -37,7 +42,6 @@ export class AppComponent implements OnInit{
       IMAGES.NEWS.TWO,
       IMAGES.NEWS.THREE,
       IMAGES.NEWS.FOUR,
-      IMAGES.SYSTEMS.ONE,
       IMAGES.SYSTEMS.TWO,
       IMAGES.SYSTEMS.THREE,
       IMAGES.SYSTEMS.FOUR,
@@ -52,15 +56,16 @@ export class AppComponent implements OnInit{
       IMAGES.SYSTEMS.THIRTEEN,
       IMAGES.SYSTEMS.FOURTEEN,
       IMAGES.SYSTEMS.FIFTEEN,
-      IMAGES.SERVICES.ONE,
+      IMAGES.SYSTEMS.ONE,
       IMAGES.SERVICES.TWO,
       IMAGES.SERVICES.THREE,
       IMAGES.SERVICES.FOUR,
       IMAGES.SERVICES.FIVE,
       IMAGES.SERVICES.SIX,
       IMAGES.SERVICES.SEVEN,
+      IMAGES.SERVICES.ONE,
       IMAGES.CLIENTS.ONE,
-
+      IMAGES.CONTACT_US.ONE
       );
   }
 

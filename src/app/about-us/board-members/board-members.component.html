@@ -36,16 +36,43 @@
             </div>
         </div>
     </div>
-    <div [hidden]="selectedImage!==IMAGES_PROFILE.KHALED_AZMY" class="margin-bottom-last-element">
-        <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED"></primary-img>
+    <!-- mobile and tablets -->
+    <div class="d-lg-none">
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.KHALED_AZMY">
+            <a href="mailto:khaledazmysecuritymes@gmail.com">
+                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED_MOBILE"></primary-img>
+            </a>
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.MOHAMED_AZMY">
+            <a href="mailto:mohamedazmysecuritymes@gmail.com">
+                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SIX_KHALED_MOBILE"></primary-img>
+            </a>
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_AZMY">
+            <a href="mailto:azmyabdelgawadmes@gmail.com">
+                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SEVEN_KHALED_MOBILE"></primary-img>
+            </a>
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_ESSAM">
+            <a href="mailto:essamabdelghany@gmail.com">
+                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.EIGHT_KHALED_MOBILE"></primary-img>
+            </a>
+        </div>
     </div>
-    <div [hidden]="selectedImage!==IMAGES_PROFILE.MOHAMED_AZMY" class="margin-bottom-last-element">
-        <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SIX_KHALED"></primary-img>
-    </div>
-    <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_AZMY" class="margin-bottom-last-element">
-        <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SEVEN_KHALED"></primary-img>
-    </div>
-    <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_ESSAM" class="margin-bottom-last-element">
-        <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.EIGHT_KHALED"></primary-img>
+    <!-- desktop -->
+    <div class="d-none d-lg-block">
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.KHALED_AZMY" class="margin-bottom-last-element">
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED"></primary-img>
+            <!-- <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED"></primary-img> -->
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.MOHAMED_AZMY" class="margin-bottom-last-element">
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SIX_KHALED"></primary-img>
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_AZMY" class="margin-bottom-last-element">
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SEVEN_KHALED"></primary-img>
+        </div>
+        <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_ESSAM" class="margin-bottom-last-element">
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.EIGHT_KHALED"></primary-img>
+        </div>
     </div>
 </div>
