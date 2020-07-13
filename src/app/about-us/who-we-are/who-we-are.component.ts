@@ -51,7 +51,7 @@ export class WhoWeAreComponent implements OnInit {
   Road Blockers, Tire Killer, Turnstile Gates, Mantrap Gates, Time-Attendance, and X-Ray Machines.`;
 
   textParaghraphImgFive = `<h4>Our Mission</h4><br>Identify and mitigate our client’s risks, to be able to
-  operate safely with efciency and provide a wide range of
+  operate safely with efficiency and provide a wide range of
   high-quality security solutions in order to ensure our
   client’s satisfaction.`;
 

@@ -27,7 +27,7 @@
             <div (click)="changeSelectedImage(IMAGES_PROFILE.GEN_AZMY)" class="option cursor-pointer">
                 <img *ngIf="selectedImage===IMAGES_PROFILE.GEN_AZMY" class="arrow mr-2"
                     src="{{IMAGES.ABOUT_US.BOARD_MEMBERS.ARROW_RIGHT}}">
-                <span [ngClass]="{'selected': selectedImage===IMAGES_PROFILE.GEN_AZMY}">GEN. AZMY ABDEL GAWAD</span>
+                <span [ngClass]="{'selected': selectedImage===IMAGES_PROFILE.GEN_AZMY}">GEN. AZMY ABDEL GHANY</span>
             </div>
             <div (click)="changeSelectedImage(IMAGES_PROFILE.GEN_ESSAM)" class="option cursor-pointer">
                 <img *ngIf="selectedImage===IMAGES_PROFILE.GEN_ESSAM" class="arrow mr-2"
@@ -39,24 +39,16 @@
     <!-- mobile and tablets -->
     <div class="d-lg-none">
         <div [hidden]="selectedImage!==IMAGES_PROFILE.KHALED_AZMY">
-            <a href="mailto:khaledazmysecuritymes@gmail.com">
-                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED_MOBILE"></primary-img>
-            </a>
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.FIVE_KHALED_MOBILE"></primary-img>
         </div>
         <div [hidden]="selectedImage!==IMAGES_PROFILE.MOHAMED_AZMY">
-            <a href="mailto:mohamedazmysecuritymes@gmail.com">
-                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SIX_KHALED_MOBILE"></primary-img>
-            </a>
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SIX_KHALED_MOBILE"></primary-img>
         </div>
         <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_AZMY">
-            <a href="mailto:azmyabdelgawadmes@gmail.com">
-                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SEVEN_KHALED_MOBILE"></primary-img>
-            </a>
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.SEVEN_KHALED_MOBILE"></primary-img>
         </div>
         <div [hidden]="selectedImage!==IMAGES_PROFILE.GEN_ESSAM">
-            <a href="mailto:essamabdelghany@gmail.com">
-                <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.EIGHT_KHALED_MOBILE"></primary-img>
-            </a>
+            <primary-img [imgPath]="IMAGES.ABOUT_US.BOARD_MEMBERS.EIGHT_KHALED_MOBILE"></primary-img>
         </div>
     </div>
     <!-- desktop -->

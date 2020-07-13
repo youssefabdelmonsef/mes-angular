@@ -19,7 +19,7 @@ export class ServicesComponent implements OnInit {
   providing the safest possible environment for clients
   and their personnel to operate.`;
 
-  textParaghraphImgThree = `<h2>EVENT SECURITY</h2><br>Middle East Security has signicant experience
+  textParaghraphImgThree = `<h2>EVENT SECURITY</h2><br>Middle East Security has significant experience
 providing Security Advisors to underpin our clients’
 Special Events.<br>
 We also liaise with key local event partners to ensure
@@ -35,7 +35,7 @@ priorities.
 
   textParaghraphImgFive = `<h2>MANNED SECURITY GUARDING</h2><br>Middle East Security provides security services
   utilized with respectable, well trained vetted and
-  discreet security ofcers who are cognizant at
+  discreet security officers who are cognizant at
   all times to have the force needed for securing
   the client's business properties and assets.`;
   textParaghraphImgSix = `<h2>MEET & GREET</h2><br>Middle East Security Meet &Greet service provides a quick
@@ -48,7 +48,7 @@ priorities.
   textParaghraphImgSeven = `<h2>SECURE TRANSPORTATION</h2><br>Middle East Security offers tailored solutions based upon
   the client's itineraries, travel plans and the risk landscapes
   of the destinations, aligned with Middle East Security
-  trained chauffeurs, with high- specication vehicles.<br>
+  trained chauffeurs, with high- specification vehicles.<br>
   We can dovetail other security services into Secure
   Transportation requests, such as Close Protection.`;
 

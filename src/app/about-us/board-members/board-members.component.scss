@@ -11,7 +11,7 @@
     }
 }
 .selection-area {
-	padding: 20px 50px;
+	padding: 20px 0px 20px 50px;
     background: rgb(29,25,26);
     color: white;
     font-size: 18px;
@@ -24,7 +24,7 @@
 @media(min-width: 992px) {
     .selection-area {
         position: relative;
-        background: red;
+        background: $mes-cyan-color;
         z-index: 99999999;
         border-top: none;
 

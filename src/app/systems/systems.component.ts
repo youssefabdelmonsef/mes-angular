@@ -61,14 +61,14 @@ systems and network sources and then analyzing the information
 for any possible security problems.<br>
 Intrusion Detection Systems provide the following:<br>
 • Monitoring and analysis of user and system activity.<br>
-• Auditing of system congurations and vulnerabilities.<br>
+• Auditing of system configurations and vulnerabilities.<br>
 • Assessing the integrity of the critical system and data files.<br>
 • Statistical analysis of activity patterns, based on the matching to discover attacks.<br>
 • Irregular activity analysis.<br>
 • Operating system audits.<br>`;
   textParaghraphImgSeven = `<h2>Fire Alarm systems</h2><br>
-Fire detection systems are designed to discover fires at its early development, which eases safe evacuation of occupants.<br>
-Early detection also plays a signicant role in protecting your assets.<br>
+Fire detection systems are designed to discover fires at its early development, which eases safe evacuation of occupants.<br>
+Early detection also plays a significant role in protecting your assets.<br>
 Property loss can be reduced and downtime through early detection.<br>
 Most alarm systems provide information to emergency responders with the location of the firre, which supports the process of fire control.`;
 textParaghraphImgEight = `<h2>Safety and Security Film</h2><br>

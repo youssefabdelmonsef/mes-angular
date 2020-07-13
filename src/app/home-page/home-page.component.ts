@@ -25,7 +25,7 @@ checkScroll() {
   IMAGES = IMAGES;
 
   textParaghraphImgTwo = `<strong style="font-family: sans-serif; font-weight: bold;">Middle East Security</strong> was established in 2009, developed by an
-  elite group of policemen and military ofcers, security
+  elite group of policemen and military officers, security
   specialists, highly experienced lawyers and well-trained
   administrators who use state-of- the-art leadership
   techniques.<br>
