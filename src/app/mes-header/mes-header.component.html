@@ -26,7 +26,10 @@
       <li class="nav-item mx-lg-2 mx-xl-4 dropdown">
         <a class="nav-link dropdown-toggle" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.ABOUT_US)}"
           id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="link mr-1"><span>{{'header.aboutUs' | translate}}</span> <img class="arrow"
+          <div class="link mr-1">
+            <!-- <span>{{'header.aboutUs' | translate}}</span> -->
+            <span>About Us</span>
+            <img class="arrow"
               src="{{IMAGES.HEADER.ARROW_DOWN}}"></div>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" [ngClass]="{'sublink': getActiveLink(MES_ROUTES.ABOUT_US_WHO_WE_ARE)}"
@@ -37,32 +40,28 @@
         </a>
       </li>
       <li class="nav-item mx-lg-2 mx-xl-4">
-        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.NEWS)}" href="{{MES_ROUTES.NEWS}}">
-          <div class="link">News</div>
+        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.NEWS)}">
+          <div class="link" (click)="navigate('/'+MES_ROUTES.NEWS)">News</div>
         </a>
       </li>
       <li class="nav-item mx-lg-2 mx-xl-4">
-        <a class="nav-link" [ngClass]="{'activeLinkOrange': getActiveLink(MES_ROUTES.SYSTEMS)}"
-          href="{{MES_ROUTES.SYSTEMS}}">
-          <div class="link">Systems</div>
+        <a class="nav-link" [ngClass]="{'activeLinkOrange': getActiveLink(MES_ROUTES.SYSTEMS)}">
+          <div class="link" (click)="navigate('/'+MES_ROUTES.SYSTEMS)">Systems</div>
         </a>
       </li>
       <li class="nav-item mx-lg-2 mx-xl-4">
-        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.SERVICES)}"
-          href="{{MES_ROUTES.SERVICES}}">
-          <div class="link">Services</div>
+        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.SERVICES)}">
+          <div class="link" (click)="navigate('/'+MES_ROUTES.SERVICES)">Services</div>
         </a>
       </li>
       <li class="nav-item mx-lg-2 mx-xl-4">
-        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.CLIENTS)}"
-          href="{{MES_ROUTES.CLIENTS}}">
-          <div class="link">Clients</div>
+        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.CLIENTS)}">
+          <div class="link" (click)="navigate('/'+MES_ROUTES.CLIENTS)">Clients</div>
         </a>
       </li>
       <li class="nav-item mx-lg-2 mx-xl-4">
-        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.CONTACT_US)}"
-          href="{{MES_ROUTES.CONTACT_US}}">
-          <div class="link">Contact Us</div>
+        <a class="nav-link" [ngClass]="{'activeLinkLine': getActiveLink(MES_ROUTES.CONTACT_US)}">
+          <div class="link" (click)="navigate('/'+MES_ROUTES.CONTACT_US)">Contact Us</div>
         </a>
       </li>
     </ul>

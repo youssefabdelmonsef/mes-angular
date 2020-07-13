@@ -44,7 +44,7 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => HomePageModule
-  },
+  }
 ];
 
 @NgModule({

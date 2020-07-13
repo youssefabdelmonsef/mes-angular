@@ -12,6 +12,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { SharedModule, HttpLoaderFactory } from './shared/shared.module';
 import { HomePageModule } from './home-page/home-page.module';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { HomePageModule } from './home-page/home-page.module';
       }
     })
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

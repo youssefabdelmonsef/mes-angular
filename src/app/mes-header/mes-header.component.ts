@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import { IMAGES } from '../constants/images';
 import { Router } from '@angular/router';
 import { MES_ROUTES } from '../constants/routes.constant';
@@ -8,7 +8,7 @@ import { MES_ROUTES } from '../constants/routes.constant';
   templateUrl: './mes-header.component.html',
   styleUrls: ['./mes-header.component.scss']
 })
-export class MesHeaderComponent implements OnInit {
+export class MesHeaderComponent {
 
   IMAGES = IMAGES;
   MES_ROUTES = MES_ROUTES;
@@ -17,17 +17,15 @@ export class MesHeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
-
-  }
-
   getActiveLink(url) {
 
-    return this.router.url.includes(url);
+    return this.router.url.includes(url.replace('#',''));
   }
 
   navigate(url) {
     url? window.location.href = url : '';
+    let element = document.getElementById('navbarNavDropdown');
+    element.classList.remove('show');
   }
 
   overAdvisoryGrey(action) {
