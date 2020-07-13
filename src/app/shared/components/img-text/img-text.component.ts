@@ -44,9 +44,9 @@ export class ImgTextComponent implements OnInit {
                 if (window.innerWidth > 991) {
                     this.height = this.targetImage.nativeElement.offsetHeight +
                         this.targetElement.nativeElement.offsetHeight - (this.marginBottom || 125);
-                    console.log(this.targetImage.nativeElement.offsetHeight,
-                        this.targetElement.nativeElement.offsetHeight, 
-                        this.height)
+                    // console.log(this.targetImage.nativeElement.offsetHeight,
+                    //     this.targetElement.nativeElement.offsetHeight, 
+                    //     this.height)
                     this.heightStyle = { "height": this.height + "px" };
                 }
         }, 1500);    

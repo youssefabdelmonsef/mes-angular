@@ -11,17 +11,16 @@ export class HomePageComponent implements OnInit {
 
   @ViewChild('chatTeaser') chatTeaser: ElementRef;
 
-@HostListener('window:scroll')
-checkScroll() {
+  @HostListener('window:scroll')
+  checkScroll() {
     const scrollPosition = window.pageYOffset + window.innerHeight;
 
     if (this.chatTeaser && this.chatTeaser.nativeElement.offsetTop >= scrollPosition) {
-        this.test();
     }
-}
+  }
 
   MES_ROUTES = MES_ROUTES;
-  
+
   IMAGES = IMAGES;
 
   textParaghraphImgTwo = `<strong style="font-family: sans-serif; font-weight: bold;">Middle East Security</strong> was established in 2009, developed by an
@@ -70,10 +69,6 @@ checkScroll() {
     window.open(
       url, '_blank'
     );
-  }
-
-  test() {
-    // console.log(12121212)
   }
 
 }

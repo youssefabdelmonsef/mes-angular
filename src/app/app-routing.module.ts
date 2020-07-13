@@ -41,6 +41,10 @@ const routes: Routes = [
     path: 'contact-us',
     loadChildren: () => ContactUsModule
   },
+  {
+    path: '**',
+    loadChildren: () => HomePageModule
+  },
 ];
 
 @NgModule({
